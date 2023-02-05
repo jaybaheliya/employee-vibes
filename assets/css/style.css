@@ -11,7 +11,7 @@
 :root {
     --text-color: #808285;
     --heading: #191919;
-    --blue-dark: #5956e9;
+    --blue-dark: #145fa5;
     --ev-grad: linear-gradient(90deg, rgb(0 119 189) 0%, rgb(88 198 223) 100%);
     --ev-grad-dark: linear-gradient(90deg, rgb(7 71 108) 0%, rgb(7 108 131) 100%);
     --ev-txtGrad: linear-gradient(90deg, rgb(3 106 167) 0%, rgb(62 161 184) 100%);
@@ -1075,7 +1075,10 @@ button {
 }
 
 .header-navigation .main-menu ul li:hover>a {
-    color: var(--blue-dark)
+    color: var(--blue-dark);
+    background: var(--ev-txtGrad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header-navigation .main-menu ul li>a.active:after,
@@ -1877,7 +1880,7 @@ button {
 .about-area-v1 .shape-one {
     position: absolute;
     bottom: 220px;
-    left: -60px;
+    left: -90px;
 }
 
 .about-area-v1 .img-holder img {
@@ -3952,7 +3955,24 @@ button {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.filterRemoved {
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+
+.partners-wrapper .partner-item:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+
+.partners-area {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .partners-area-v1 {
@@ -5154,7 +5174,7 @@ button {
 }
 
 .footer-top .text-wrapper {
-    padding-left: 170px;
+    padding-left: 100px;
     border-left: 2px solid rgba(89, 86, 233, .2)
 }
 
@@ -5238,9 +5258,13 @@ button {
 }
 
 .footer-widget .widget.newsletter-widget .newsletter-content h3 {
-    font-size: 40px;
+    font-size: 28px;
     line-height: 50px;
     margin-bottom: 20px
+}
+
+.footer-logo>img {
+    max-width: 80%;
 }
 
 .footer-widget .widget.newsletter-widget .newsletter-content p {
@@ -5438,11 +5462,17 @@ button {
 
 .dark-version .header-navigation.breakpoint-on .nav-menu.main-menu ul>li>a.nav-link.active,
 .dark-version .header-navigation .main-menu ul li>a.active {
-    color: var(--blue-dark)
+    color: var(--blue-dark);
+    background: var(--ev-txtGrad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .dark-version .header-navigation .main-menu ul li:hover>a {
-    color: var(--blue-dark)
+    color: var(--blue-dark);
+    background: var(--ev-txtGrad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .dark-version .header-navigation.sticky {
@@ -5619,4 +5649,8 @@ button {
 .about-area {
     padding-top: 70px;
     padding-bottom: 50px;
+}
+
+.textFade .blue-dark {
+    white-space: nowrap;
 }

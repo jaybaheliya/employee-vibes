@@ -430,6 +430,14 @@
         width: 320px;
     }
 
+    .partners-wrapper .partner-item {
+        padding: 32px 25px;
+    }
+
+    .site-branding .brand-logo {
+        max-width: 240px;
+    }
+
     .features-slide::before,
     .features-slide-rtl::before {
         display: none;
@@ -451,7 +459,8 @@
     }
 
     .service-item {
-        padding: 50px 35px 40px
+        padding: 50px 35px 40px;
+        margin-bottom: 0;
     }
 
     .cta-area-v1 .cta-wrapper .section-title h2 {
@@ -463,7 +472,29 @@
         padding-left: 0;
         padding-top: 20px;
         border-left: none;
-        border-top: 2px solid rgba(89, 86, 233, .2)
+        border-top: 2px solid rgba(89, 86, 233, .2);
+        margin-bottom: 0;
+    }
+
+    .about-area .circle-logo {
+        max-width: 50%;
+    }
+
+    .hero-banner-v1 {
+        padding: 100px 0 50px;
+    }
+
+    .main-btn {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    .cta-area-v1 .cta-wrapper {
+        padding: 60px 25px;
+    }
+
+    .footer-top {
+        padding-top: 0;
     }
 
     .partners-wrapper .partner-item {
@@ -602,7 +633,8 @@
     .footer-widget .widget.newsletter-widget .newsletter-content h3,
     .footer-top .text-wrapper h3 {
         line-height: 40px;
-        font-size: 30px
+        font-size: 22px;
+
     }
 
     .blog-standard-post-item .entry-content h3.title {

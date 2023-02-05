@@ -9,6 +9,19 @@ $('.heroSlide-fade').slick({
     cssEase: 'linear'
 });
 
+$('.textFade').slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    speed: 500,
+    autoplaySpeed: 2000,
+    vertical: true,
+    verticalSwiping: true,
+    // fade: true,
+    cssEase: 'linear'
+});
+
 $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 3,
@@ -103,3 +116,35 @@ $('.features-slide-rtl').slick({
         }
     ]
 });
+
+
+
+var i = 0,
+    j = document.querySelectorAll(".partner-item").length;
+
+function blink(i) {
+    new Promise(function (resolve, reject) {
+        x = setTimeout(function () {
+            document.querySelectorAll(".partner-item")[i].classList.add("filterRemoved");
+            resolve("added");
+        }, 800)
+    }).then(function (a) {
+        new Promise(function (res, rej) {
+            setTimeout(function () {
+                clearInterval(x);
+                document.querySelectorAll(".partner-item")[i].classList.remove("filterRemoved");
+                res("deleted");
+            }, 800)
+        }).then(function (a) {
+            i++;
+            if (i < j) {
+                blink(i);
+            } else {
+                i = 0;
+                blink(i);
+            }
+        });
+
+    });
+}
+blink(i);
