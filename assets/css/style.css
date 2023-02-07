@@ -5578,7 +5578,7 @@ button {
     position: relative;
 }
 
-.features-slide::after,
+/* .features-slide::after,
 .features-slide::before,
 .features-slide-rtl::after,
 .features-slide-rtl::before {
@@ -5607,7 +5607,7 @@ button {
 
 .features-slide-rtl .service-item {
     direction: ltr;
-}
+} */
 
 .service-item .icon img {
     height: 80px;
