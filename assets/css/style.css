@@ -5654,3 +5654,53 @@ button {
 .textFade .blue-dark {
     white-space: nowrap;
 }
+
+.shop-bottom-banner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box-green {
+    background: #0d4c7e;
+    background-size: contain;
+    padding: 70px 64px;
+}
+
+.box-green-2 {
+    background-image: url(https://agon-nextjs-13.vercel.app/_next/static/media/bg-hand.d1809553.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto 300px;
+    position: relative;
+    border-radius: 18px;
+}
+
+.box-green-2 .block-1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 210px;
+}
+
+.box-green-2 .block-2 {
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    width: 240px;
+}
+
+.box-green .text-heading-1 {
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -1%;
+    color: #fff;
+    font-size: 56px;
+}
+
+.box-green .text-desc-white {
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    margin-top: 15px;
+    max-width: 430px;
+}
