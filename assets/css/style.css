@@ -3943,7 +3943,7 @@ button {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
-    padding: 54px 40px;
+    padding: 50px 60px;
     border-bottom: 1px solid rgba(80, 56, 238, .102);
     border-right: 1px solid rgba(80, 56, 238, .102);
     max-height: 100px;
@@ -5703,4 +5703,111 @@ button {
     color: #fff;
     margin-top: 15px;
     max-width: 430px;
+}
+
+.bg-gradient5 {
+    background: #fff6f3;
+    background: -moz-linear-gradient(top, #fff6f3 0, #fffefb 100%);
+    background: -webkit-linear-gradient(top, #fff6f3 0, #fffefb 100%);
+    background: linear-gradient(to bottom, #fff6f3 0, #fffefb 100%);
+}
+
+.pad-tb {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.common-heading {
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.common-heading>span {
+    line-height: 26px;
+}
+
+.common-heading>span {
+    color: var(--blue-dark);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 15px;
+    display: block;
+}
+
+.common-heading h2 {
+    margin-bottom: 60px;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.badges-content {
+    text-align: center;
+}
+
+.badges-content p {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 0 50px;
+    margin-top: 10px;
+}
+
+.-cta-btn {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.free-cta-title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.-cta-btn p {
+    font-size: 30px;
+    color: #050748;
+    margin: 0 30px 0 0;
+}
+
+.-cta-btn p span {
+    font-weight: 700;
+}
+
+html .mt70 {
+    margin-top: 70px;
+}
+
+.footer-brands {
+    background: #f8f9fa;
+    padding: 30px 0;
+}
+
+.v-center {
+    align-self: center;
+    align-items: center;
+}
+
+.footer-badges- {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-badges- li {
+    display: inline-block;
+}
+
+.footer-badges- li a img {
+    width: 150px;
+}
+
+.footer-brands h5 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer-brands p {
+    font-size: 17px;
+    line-height: 28px;
 }
