@@ -5811,3 +5811,39 @@ html .mt70 {
     font-size: 17px;
     line-height: 28px;
 }
+
+.download-button {
+    display: inline-block;
+}
+
+.butn-lg {
+    padding: 0 30px;
+    min-height: 55px;
+    line-height: 55px;
+    min-width: 190px;
+}
+
+.butn.bord-white {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.butn.bg-white {
+    color: #23262d;
+    border: 1px solid #fff;
+}
+
+.butn-rounded {
+    border-radius: 30px;
+}
+
+.butn.bg-white:hover {
+    background: transparent !important;
+    border-color: #fff;
+    color: #fff;
+}
+
+.butn.bord-white:hover {
+    background: #fff;
+    color: #23262d;
+}
