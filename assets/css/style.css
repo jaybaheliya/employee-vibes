@@ -837,10 +837,23 @@ button {
     z-index: 9999
 }
 
+.offcanvas-panel .offcanvas-panel-inner .about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.offcanvas-panel .offcanvas-panel-inner .btn-link {
+    font-size: 16px;
+}
+
 .offcanvas-panel .offcanvas-panel-inner .panel-logo,
 .offcanvas-panel .offcanvas-panel-inner .offcanvas-panel,
 .offcanvas-panel .offcanvas-panel-inner .about-us {
     margin-bottom: 40px
+}
+
+.offcanvas-panel .offcanvas-panel-inner .panel-logo img {
+    max-width: 90%;
 }
 
 .offcanvas-panel .panel-widget-title {
@@ -856,7 +869,8 @@ button {
     position: relative;
     padding-left: 60px;
     margin-bottom: 30px;
-    font-size: 16px
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .offcanvas-panel .contact-us ul li:last-child {
@@ -2063,6 +2077,7 @@ button {
     text-overflow: ellipsis;
     overflow: hidden;
     color: #444;
+    min-height: 110px;
 }
 
 .service-style-one:hover {
@@ -2989,9 +3004,9 @@ button {
 .cta-area-v1 .cta-img {
     position: absolute;
     right: 30px;
-    bottom: 0;
+    bottom: -40px;
     overflow: hidden;
-    text-align: center;
+    text-align: right;
 }
 
 .cta-area-v1 .cta-img>img {
@@ -5609,6 +5624,94 @@ button {
     direction: ltr;
 } */
 
+/* Jwala */
+
+.wtsApp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #28a745;
+    color: #FFF !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 34px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wtsApp:hover i{
+    animation: pulse 2s infinite;
+}
+
+
+.btnBookNow {
+    background: #de6161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: 400%;
+    -webkit-animation: anime 16s linear infinite;
+    animation: anime 16s linear infinite;   
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    right: 50px;
+    z-index: 999;
+    top:50%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform-origin: bottom right;
+    min-width: 180px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 30%);
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    padding-right: 28px;
+    letter-spacing: 0.4px;
+}
+.btnBookNow:hover,.btnBookNow:focus{
+    box-shadow:none;
+    color: #fff;
+}
+.btnBookNow i{
+    position: absolute;
+    transform: rotate(270deg);
+    margin-left: 5px;
+    right: 10%;
+    top: 30%;
+}
+.btnBookNow i::before{
+    animation: iChange 3s linear infinite;
+    -webkit-animation: iChange 3s linear infinite;
+}
+
+@keyframes iChange{
+    0%{
+        content: "\f109";
+    }
+    75%{
+        content: "\f3cd";
+    }
+    100%{
+        content: "\f390";
+    }   
+}
+
 .service-item .icon img {
     height: 80px;
     width: 80px;
@@ -5667,10 +5770,10 @@ button {
 }
 
 .box-green-2 {
-    background-image: url(https://agon-nextjs-13.vercel.app/_next/static/media/bg-hand.d1809553.png);
+    background-image: url(../images/resources/bgMob.png);
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: auto 300px;
+    background-position: 104% 70%;
+    background-size: auto 130%;
     position: relative;
     border-radius: 18px;
 }
@@ -5744,9 +5847,38 @@ button {
 
 .badges-content {
     text-align: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    padding: 0 32px;
+}
+
+.badges-content>img {
+    padding: 20px 20px 10px;
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+}
+
+.badges-content:hover>img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.-spaceEven {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .badges-content p {
+    display: none;
     font-size: 15px;
     line-height: 22px;
     padding: 0 50px;
@@ -5847,3 +5979,73 @@ html .mt70 {
     background: #fff;
     color: #23262d;
 }
+
+#bigCog {
+    animation: rotation 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: rotation 4s infinite linear;
+}
+
+#smallCog {
+    animation: rotation 6s infinite linear reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+    -webkit-animation: rotation 6s infinite linear reverse;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.is-active .mute__headphones {
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    40% {
+        transform: scale(1) rotate(5deg);
+    }
+
+    80% {
+        transform: scale(1) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(0.9) rotate(0);
+    }
+}
+@-webkit-keyframes anime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes anime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
