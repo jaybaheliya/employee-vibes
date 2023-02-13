@@ -2989,7 +2989,7 @@ button {
     height: 100%;
     background: url(../images/map.png) no-repeat right;
     background-size: contain;
-    z-index: -1
+    z-index: -2
 }
 
 .cta-area-v1 .cta-wrapper .section-title h2 {
@@ -5643,18 +5643,22 @@ button {
     align-items: center;
     justify-content: center;
 }
-.wtsApp:hover i{
+
+.wtsApp:hover i {
     animation: pulse 2s infinite;
 }
 
 
 .btnBookNow {
-    background: #de6161;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #de6161;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2657eb, #de6161);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 400%;
     -webkit-animation: anime 16s linear infinite;
-    animation: anime 16s linear infinite;   
+    animation: anime 16s linear infinite;
     color: #fff;
     display: inline-block;
     font-size: 1rem;
@@ -5663,7 +5667,7 @@ button {
     position: fixed;
     right: 50px;
     z-index: 999;
-    top:50%;
+    top: 50%;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -5684,32 +5688,38 @@ button {
     padding-right: 28px;
     letter-spacing: 0.4px;
 }
-.btnBookNow:hover,.btnBookNow:focus{
-    box-shadow:none;
+
+.btnBookNow:hover,
+.btnBookNow:focus {
+    box-shadow: none;
     color: #fff;
 }
-.btnBookNow i{
+
+.btnBookNow i {
     position: absolute;
     transform: rotate(270deg);
     margin-left: 5px;
     right: 10%;
     top: 30%;
 }
-.btnBookNow i::before{
+
+.btnBookNow i::before {
     animation: iChange 3s linear infinite;
     -webkit-animation: iChange 3s linear infinite;
 }
 
-@keyframes iChange{
-    0%{
+@keyframes iChange {
+    0% {
         content: "\f109";
     }
-    75%{
+
+    75% {
         content: "\f3cd";
     }
-    100%{
+
+    100% {
         content: "\f390";
-    }   
+    }
 }
 
 .service-item .icon img {
@@ -5994,6 +6004,10 @@ html .mt70 {
     -webkit-animation: rotation 6s infinite linear reverse;
 }
 
+/* #bg-mob {
+    fill: url(../images/resources/mob-screen/1.jpeg);
+} */
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -6026,26 +6040,127 @@ html .mt70 {
         transform: scale(0.9) rotate(0);
     }
 }
+
 @-webkit-keyframes anime {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
-  @keyframes anime {
+}
+
+@keyframes anime {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
-  
+}
+
+.mobSection {
+    position: relative;
+}
+
+.iphone-x {
+    position: absolute;
+    width: 260px;
+    height: 560px;
+    overflow: hidden;
+    right: 19.4%;
+    bottom: 6%;
+    z-index: -1;
+    background-color: #fff;
+    /* background-image: url(../images/resources/mob-screen/1.jpeg); */
+    border-radius: 40px;
+    box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 12px #111;
+}
+
+.iphone-x img {
+    height: 560px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.iphone-x:before,
+.iphone-x:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iphone-x:after {
+    bottom: 7px;
+    width: 140px;
+    height: 4px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+.iphone-x:before {
+    top: 0px;
+    width: 56%;
+    height: 30px;
+    background-color: #1f1f1f;
+    border-radius: 0px 0px 40px 40px;
+    z-index: 15;
+}
+
+.iphone-x i,
+.iphone-x b,
+.iphone-x s,
+.iphone-x span {
+    position: absolute;
+    display: block;
+    color: transparent;
+    z-index: 15;
+}
+
+.iphone-x i {
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 6px);
+    height: 8px;
+    width: 15%;
+    background-color: #101010;
+    border-radius: 8px;
+    box-shadow: inset 0px -3px 3px 0px rgba(255, 255, 255, 0.2);
+}
+
+.iphone-x b {
+    left: 10%;
+    top: 0px;
+    transform: translate(180px, 4px);
+    width: 12px;
+    height: 12px;
+    background-color: #101010;
+    border-radius: 12px;
+    box-shadow: inset 0px -3px 2px 0px rgba(255, 255, 255, 0.2);
+}
+
+.iphone-x b:after {
+    content: "";
+    position: absolute;
+    background-color: #2d4d76;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 2px;
+    top: 3px;
+    left: 3px;
+    display: block;
+    border-radius: 4px;
+    box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+}

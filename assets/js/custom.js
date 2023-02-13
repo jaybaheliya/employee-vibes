@@ -8,6 +8,16 @@ $('.heroSlide-fade').slick({
     fade: true,
     cssEase: 'linear'
 });
+$('.mob-fade').slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    speed: 1000,
+    autoplaySpeed: 4000
+    // fade: true,
+    // cssEase: 'linear'
+});
 
 $('.textFade').slick({
     dots: false,
