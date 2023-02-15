@@ -5998,7 +5998,8 @@ html .mt70 {
     color: #23262d;
 }
 
-#bigCog {
+#bigCog,
+.bigCog {
     animation: rotation 4s infinite linear;
     transform-origin: center;
     transform-box: fill-box;
@@ -6173,6 +6174,7 @@ html .mt70 {
     box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
 }
 
+
 .st1 {
     fill: #FFFFFF;
 }
@@ -6219,4 +6221,8 @@ html .mt70 {
     100% {
         transform: translatey(0px);
     }
+}
+
+.aboutUs .page-banner-img {
+    margin-bottom: -200px;
 }
