@@ -6514,6 +6514,8 @@ html .mt70 {
     margin-top: 88px;
 }
 
+
+
 .topBanner:before {
     left: -28px;
     width: 486px;
@@ -6576,7 +6578,7 @@ html .mt70 {
     top: -34px;
     z-index: 1;
     opacity: 0.3;
-    font-size: 128px;
+    font-size: 110px;
     font-weight: 700;
     line-height: 100px;
     position: absolute;
@@ -6695,6 +6697,8 @@ html .mt70 {
     max-height: 450px;
     position: relative;
     margin-right: calc(-50vw + 50%) !important;
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
 }
 
 .page-banner__media:after {
