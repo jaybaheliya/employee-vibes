@@ -5246,8 +5246,8 @@ button {
 
 .footer-top {
     border-bottom: 1px solid rgba(89, 86, 233, .2);
-    padding-top: 75px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 0px;
 }
 
 .footer-top .text-wrapper {
