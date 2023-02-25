@@ -198,7 +198,7 @@
         }, {
             breakpoint: 767,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 2
             }
         }]
     });
