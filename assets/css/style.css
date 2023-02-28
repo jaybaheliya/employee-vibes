@@ -7027,6 +7027,13 @@ html .mt70 {
     }
 }
 
+.img-style1 {
+    width: 94%;
+    border-radius: 10%;
+    border: 6px solid #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
 @media only screen and (max-width: 767px) {
     .features-grid-wrap {
         grid-template-columns: repeat(2, 1fr);
@@ -7035,6 +7042,10 @@ html .mt70 {
     .features-box.features-style-3 .icon>img {
         height: auto;
         width: 100px;
+    }
+
+    .img-style1 {
+        width: 100%;
     }
 }
 
