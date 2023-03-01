@@ -4575,8 +4575,11 @@ button {
 }
 
 .post-author-box {
-    background-color: #000248;
+    background: #074a75 url(/assets/images/bg/get-free-bg.png);
+    background-attachment: fixed;
     padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6573,6 +6576,9 @@ html .mt70 {
 
     .cta-banner__content-btn {
         width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
     }
 
     .cta-banner__content .theme-btn.btn-white {
@@ -6968,8 +6974,8 @@ html .mt70 {
 }
 
 .features-box.features-style-3 .icon>img {
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
 }
 
 .-v2 .features-box.features-style-3 .icon>img {
@@ -7018,7 +7024,7 @@ html .mt70 {
 
 .features-grid-wrap {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
