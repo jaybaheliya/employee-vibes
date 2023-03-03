@@ -4610,7 +4610,7 @@ button {
 
 .post-author-box .author-content p {
     margin-bottom: 10px;
-    color: rgba(255, 255, 255, .7)
+    color: rgba(255, 255, 255, .9)
 }
 
 .post-author-box .author-content ul.social-link li {
@@ -6553,6 +6553,18 @@ html .mt70 {
 }
 
 @media (max-width: 767px) {
+    .header-navigation .main-menu ul li .sub-menu {
+        padding: 0;
+    }
+
+    .header-navigation .main-menu ul li .sub-menu li {
+        padding: 0;
+    }
+
+    .header-navigation .main-menu ul li>a {
+        font-size: 14px;
+    }
+
     .page-banner:before {
         bottom: -12px;
     }
@@ -7098,4 +7110,8 @@ html .mt70 {
 
 .features-area-3 {
     margin-bottom: -100px;
+}
+
+.bg-white {
+    background: #ffffff;
 }
