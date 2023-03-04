@@ -427,6 +427,14 @@
 }
 
 @media(max-width:767px) {
+    .is-desktop {
+        display: none !important;
+    }
+
+    .is-mobile {
+        display: block !important;
+    }
+
     .free-cta-title {
         flex-direction: column;
     }
@@ -715,4 +723,12 @@
         flex: 0 0 33.33%;
         max-width: 33.33%
     }
+}
+
+.is-desktop {
+    display: block;
+}
+
+.is-mobile {
+    display: none;
 }

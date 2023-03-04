@@ -238,7 +238,7 @@ ul.social-link li {
 }
 
 .section-title p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500
 }
 
@@ -6562,7 +6562,7 @@ html .mt70 {
     }
 
     .header-navigation .main-menu ul li>a {
-        font-size: 14px;
+        font-size: 1 4px;
     }
 
     .page-banner:before {
@@ -7114,4 +7114,19 @@ html .mt70 {
 
 .bg-white {
     background: #ffffff;
+}
+
+#home .service-item p {
+    min-height: auto;
+}
+
+#mobile-application .down-butn {
+    color: #23262d;
+    border: 1px solid #23262d;
+}
+
+#mobile-application .down-butn:hover {
+    color: #fff;
+    border: 1px solid #04213F;
+    background-color: #04213F !important;
 }
