@@ -4399,11 +4399,11 @@ button {
     border-radius: 7px;
     -webkit-box-shadow: 0 10px 60px 0 rgba(89, 86, 233, .1);
     box-shadow: 0 10px 60px 0 rgba(89, 86, 233, .1);
-    width: 85%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -60px;
-    padding: 30px 45px 40px
+    padding: 15px 20px 20px
 }
 
 .blog-standard-post-item .entry-content .post-meta ul li {
@@ -4415,6 +4415,11 @@ button {
     color: var(--blue-dark)
 }
 
+.blog-standard-post-item .entry-content h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .blog-standard-post-item .entry-content h3.title {
     margin-bottom: 15px
 }
@@ -4424,11 +4429,12 @@ button {
 }
 
 .blog-standard-post-item .entry-content p {
-    margin-bottom: 30px
+    margin-bottom: 15px
 }
 
 .blog-standard-post-item .entry-content .main-btn {
-    padding: 10px 30px
+    padding: 3px 18px;
+    font-size: 14px;
 }
 
 .blog-standard-post-item.post-without-thumbnail {
@@ -6730,6 +6736,8 @@ html .mt70 {
     -ms-flex-align: center;
     align-items: center;
     background: transparent;
+    z-index: 2;
+    position: relative;
 }
 
 .page-banner .breadcrumb .breadcrumb-item {
