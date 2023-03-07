@@ -2010,6 +2010,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .item-box:hover {
@@ -5042,7 +5043,7 @@ button {
 }
 
 .information-item:hover .info p {
-    color: rgba(255, 255, 255, .7)
+    color: rgba(255, 255, 255, .9)
 }
 
 .information-item .icon {
@@ -5150,7 +5151,7 @@ button {
     height: 60px;
     border-radius: 5px;
     padding: 0 30px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--heading);
     border: 1px solid rgba(88, 86, 233, .2)
 }
@@ -5260,9 +5261,9 @@ button {
     margin-bottom: 40px
 }
 
-.contact-area-v2 .information-style-two {
+/* .contact-area-v2 .information-style-two {
     max-width: 380px
-}
+} */
 
 .contact-info-v1 .map-box iframe {
     width: 100%;
